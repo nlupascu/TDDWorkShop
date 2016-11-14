@@ -20,3 +20,7 @@ class HeightCalculator(object):
     def convert_ft_and_inch_to_cm(self, ft, inch):
         calculated_inch = self.convert_ft_and_inch_to_inch(ft, inch)
         return self.convert_inches_to_cm(calculated_inch)
+
+    def convert_ft_and_inch_to_m(self, ft, inch):
+        calculated_m = self.convert_ft_and_inch_to_cm(ft, inch) / 100
+        return calculated_m

@@ -47,3 +47,6 @@ class HeightTests(TestCase):
 
     def test_convert_ft_and_inches_to_cm(self):
         self.assertEqual(33.02, self.height_calculator.convert_ft_and_inch_to_cm(1, 1))
+
+    def test_convert_ft_and_inch_to_m(self):
+        self.assertEqual(0.33020000000000005, self.height_calculator.convert_ft_and_inch_to_m(1, 1))
